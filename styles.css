@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-image: url('fondo.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  background-color: #ffffff2d;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0b7f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  background-color: #55286F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.foto img {
+  width: max-content;
+  height: 100px;
+}
+
+.text-block {
+  background-color: #e0b7f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.titulo_principal {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+  color: #ffffff;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 65ch; } 
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.table-box {
+  background-color:#55286fa2;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: monospace;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #55286F, #0a001f);
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px 20px;
+  border-bottom: 1px solid #999;
+}
+
+th {
+  background-color: #55286F;
+}
+
+table tbody tr:hover {
+  background-color: #D8B4E2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #55286F;
+  color:  #e0b7f9;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: monospace;
+  display: inline-block;
+  margin-top: 10px;
+    font-size: 20px;
+}
+
+.button:hover {
+  background-color: #e0b7f9;
+  color: #55286F;
+}
